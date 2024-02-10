@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Financial Modeling</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Qin Yao</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">PROJECTS</a></li>
+							<li><a href="About me.html">ABOUT ME</a></li>
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/qin-yao-cpa" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+							
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Financial Modeling:<br />
+									Optimal Risky Portfolio</h1>
+								</header>
+
+								<!-- Text stuff -->
+									<h2></h2>
+									<p><b>In this Financial modeling project, I planned for an investment portfolio of $5 million in two mutual funds - Vanguard Total Bond Market Index Fund (VBTLX) and Vanguard 500 Index (VFIAX) based on the optimal risky portfolio model, and compared the portfolio performance with the single security AAPL. </b> 
+								
+									
+									<header>
+										<h2>Background</h2>
+									</header>
+									<p>
+									</p>
+								    <p><span class="image right"><img src="images/Markowitz_frontier.jpg" alt="" /></span>The Optimal Risky Portfolio is the portfolio on the efficient frontier that offers the highest return per unit of risk measured by the Sharpe ratio. The efficient frontier is the set of portfolios maximizing expected return for a given level of risk, as measured by the standard deviation of return.</p>
+									<header>
+	
+									</header>
+									<p>The Sharpe ratio compares the return of an investment with its risk. It's a mathematical expression of the insight that excess returns over a period of time may signify more volatility and risk, rather than investing skill. The Sharpe ratio's numerator is the difference of expected mean return and the risk-free rate of return. Its denominator is the standard deviation of returns over the same period of time. Simply put, Sharpe Ratio = (Mean Return Rate - Risk Free Rate)/Standard Deviation of Return Rate. The risk free rate in this project is assumed to be 0.</p>
+									<header>
+										<h2>Data Source</h2>
+							
+									</header>
+									<p>Historical monthly price data for AAPL from August 2015 to July 2016 and historical monthly returns data for VBTLX and VFIAX from January 2012 to July 2016. Data can be retrieved at MorningStar's website: <a href="https://www.morningstar.com">https://www.morningstar.com</a> </p>
+
+									<h2>Task</h2>
+									<p>Utilizing the knowledge of efficient frontier and portfolio optimization in managing portfolios:
+										<li>Plan for an investment portfolio in two investment vehicles: VBTLX and VFIAX. How much of the $5 million woud be invested in each of the two funds as of the end of December 2015?</li>
+										<li>Assuming the portfolio weights fixed as of the end of the December 2015, calculate the portfolio monthly return for the period January 2016 through the end of July 2016.</li>
+										<li>How does the monthly performance of the mixed asset portfolio compare to the single security AAPL?</li></p>
+
+								<!-- Lists -->
+									<h2></h2>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											
+
+
+										</div>
+									</div>
+									<h2>1. Portfolio Allocation</h2>
+									<dl>
+										<dt></dt>
+										<p><span class="image right"><img src="images/Modeling/Efficient frontier.png" alt="" /></span>There are two approaches to calculate the allocation weights. First, calculate the approximate weights: use a 5% increment in weight (e.g., 0%, 5%, ..., 95%, 100%) in each stock, calculate the corresponding portfolio mean return and standard deviation, based on which plot the efficient frontier using the portfolio characteristics for each weight. The standard deviation and mean return can be found on the Efficient Frontier chart, and the Sharpe ratio can thus be calculated.</p>
+							            <span class="image fit"><img src="images/Modeling/Approximate.png" alt="" /></span>
+										<p>Another more accurate approach is using the Solver function in Excel: set the Sharpe Ratio cell to "Max", and select one of the funds' weight as the variance cell. The weights calculated for VBTLX and VFIAX are 67.85% and 32.15%, and Sharpe ratio is 0.4796. Given $5 million in toal, I would invest $3,392,291.69 into VBTLX and $1,607,708.31 into VFIAX as of the end of December 2015.</p>
+										<span class="image fit"><img src="images/Modeling/Solver.PNG" alt="" /></span>
+									</dd>
+									<h2>2. Portfolio Monthly Return</h2>
+									    <p>Given the monthly return rate for VBTLX and VFIAX, the monthly portfolio return rate can be calculated by summing up the multiplication of the weight and rate of each fund, based on which the return value and investment value can thus be calculated.</p>
+                                        <span class="image fit"><img src="images/Modeling/Monthly portfolio return.PNG" alt="" /></span>
+									
+									<h2>3. Portfolio VS Single Security</h2>	
+									    <p>Using the same approach, the basic measures of the single security AAPL can be calculated as follows:</p>	
+									    <span class="image fit"><img src="images/Modeling/AAPL measures.PNG" alt="" /></span>
+										<p>The monthly performance of the AAPL is as follows.</p>
+										<span class="image fit"><img src="images/Modeling/AAPL monthly performance.PNG" alt="" /></span>
+                                        <p>Comparison:</p>
+										<span class="image fit"><img src="images/Modeling/Comparison.PNG" alt="" /></span>
+										<p>Although the single security brings higher returns in a single month, e.g., Feb 2016 and Jul 2016. Portfolio yielded a higher Sharpe Ratio and Mean Return, and lower variance and standard deviation.</p>
+										<p><a href="https://1drv.ms/x/s!AhjUKyV6RF2HoyphCh0vASuWVNb3?e=RPUArQ">See the link for my Excel worksheet</a></p>
+										
+
+									<h2>Summary</h2>
+									<p>A sing security may yield higher return in short term, but the risk is that it may bring along greater loss. On the other hand, mixed assets portfolio may have more consistent return.</p>
+									<p>It is important to have portfolio diversification: invest in multiple securities or funds, and assets should be allocated based on the optimal risky portfolio that offers highest expected return on lower risk and minimum variance.</p>
+									
+									<dd>
+											
+								
+
+								
+
+
+								
+	
+
+							</section>
+
+					</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+						
+		</section>
+		<section class="split contact">
+	
+			<section>
+				<h3>Email</h3>
+				<p><a href="#">alissiayao@gmail.com</a></p>
+			</section>
+			<section>
+				<h3>Linkedin</h3>
+				<ul class="icons alt">
+					<li><a href="https://www.linkedin.com/in/qin-yao-cpa" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+					
+				</ul>
+			</section>
+		</section>
+	</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

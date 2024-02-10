@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bellabeat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Qin Yao</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">PROJECTS</a></li>
+							<li><a href="About me.html">ABOUT ME</a></li>
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/qin-yao-cpa" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+							
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>How Can a Wellness Technology Company<br />
+									Play It Smart?</h1>
+								</header>
+
+								<!-- Text stuff -->
+									<h2></h2>
+									<p><b>In this project, I analyzed data to identify common patters and trends in fitness tracking device usage, providing insights for Bellabeat marketing strategy. </b> 
+								
+									
+									<header>
+										<h2>Background</h2>
+									</header>
+									<p>Founded in 2013, Bellabeat is a high-tech company that manufactures health-focused smart devices and has positioned itself as a tech-driven wellness company for women. One of Bellabeat's products is the Bellabeat app, which allow users to gain knowledge about their health. Bellabeat app provides data on users' activity, sleep, stress, and mindful habits, and connects to Bellabeats smart device products.</p>
+									<p>The company has expanded quickly since foundation, and has the potential to become a larger player in the global market. The company executive leaders believe that analyzing smart device fitness data could help unlock new growth opportunities.</p>
+									
+									<header>
+										<h2>Business Task</h2>
+									</header>
+                                    <p>Analyze data of an existing competitor to gain insights into how consumers are using the smart device product, and: 
+									        <li>Identify trends in smart device usage.</li>
+											<li>Look into the application of the trends to Bellabeat customers.</li>
+											<li>Gain insights for Bellabeat marketing strategy.</li></p>
+									<header>
+										<h2>Data Source</h2>
+							
+									</header>
+									<p>Public dataset from Kaggle was used to explore the usage trends of wellness smart devices: <a href="https://www.kaggle.com/datasets/arashnic/fitbit">FitBit Fitness Tracker Data</a>, includes personal fitness tracker from thirty FitBit users over the period April 12, 2016 - May 12, 2016. Specifically the data contains minute-level output for physical activity, sleep monitoring, step counts and weight logs.</p>
+									
+									
+
+							
+									<h2></h2>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											
+
+
+										</div>
+									</div>
+									<h2>Data Preparation</h2>
+									<dl>
+										<dt></dt>
+										<p>To identify the device usage trends, I did the following to prepare the data: 
+							                <li>Download data from Kaggle and unzip files.</li>
+											<li>Briefly look at each data file to get an understanding of what types of data were collected.</li>
+											<li>Develop questions and hypotheses based on my preliminary review of the data: How often do users record their daily activities? What day and time do they record activities more frequently? What time do users spend on differnt type of daily activity? Is there any relationship between daily activity time of sleep time? What activities affect weight loss?</li>
+											<li>Decide which data file to use: Data in dailyCalories_merged.csv, dailyIntensities_merged.csv, dailySteps_merged.csv was already included in dailyActivity_merged.csv, so only the dailyActivity_merged.csv file was used; those minute records were not used for analysis, as it's not necessary to look at data at that level of detail.</li></p>
+										</dd>
+									<h2>Data Processing</h2>
+									    <p>I used SQL(BigQuery of Google Cloud) to clean and transform data. See the following link for SQL code: 
+										<li><a href="https://github.com/QY-Jackie/Bellabeat/blob/main/SQLCode">SQL code</a></li></p>
+                                        
+									
+									<h2>Data Analysis and Visualization</h2>	
+									    <p>Power BI was used to create visualizations from the data:</p>	
+									    <span class="image fit"><img src="images/Bellabeat/BellabeatDashboard.PNG" alt="" /></span>
+										
+										<p><b>Analysis Summary: </b></p>
+										<li>Only a few people recorded their weight and less than half of users recorded their heart rate.</li>
+										<li>Most of users log their daily activities frequently, but not consistently over the week. They tend to records more during weekdays than weekends.</li>
+										<li>Average count of daily steps taken is less than CDC recommended level. </li>
+										<li>The more active time, the more calories consumed, while the quality time is more sparsely related to active time. This may due to the fact that not enough sleep time was recorded. </li></p>
+									</dd>
+									<h2>Recommendations</h2>	
+									<p>Bellabeat should focus on the following for upgrading and marketing its products:</p>
+									<li>Upgrade the product to motivate users to use the device more consistently, which could be achieved by enabling social networking and alert notification and improve the comfort level and style of the device.</li>
+									<li>Design weekend programs in the app to attract more users, and have health and fitness companies pay for advertising.</li>
+									<li>Collect data from current Bellabeat smart device users regarding their device usage over an extended period of time, and survey them to determine features that women users would value most, since the Fitbit data was not soley based on women users and the sampled over a small population and short period of time. </li>
+									</p>
+								</dd>		
+								
+
+								
+
+
+								
+	
+
+							</section>
+
+					</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+						
+		</section>
+		<section class="split contact">
+	
+			<section>
+				<h3>Email</h3>
+				<p><a href="#">alissiayao@gmail.com</a></p>
+			</section>
+			<section>
+				<h3>Linkedin</h3>
+				<ul class="icons alt">
+					<li><a href="https://www.linkedin.com/in/qin-yao-cpa" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+					
+				</ul>
+			</section>
+		</section>
+	</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
